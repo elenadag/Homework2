@@ -34,7 +34,7 @@ ros2 launch iiwa_bringup iiwa.launch.py  command_interface:="velocity" robot_con
 
 If you want to apply an effort controller, you need to launch the file with the effort interface. To do this, run the following command:
 ```
-ros2 launch iiwa_bringup iiwa.launch.py command_interface:="effort" robot_controller:=“effort_controller" use_sim:=true
+ros2 launch iiwa_bringup iiwa.launch.py command_interface:="effort" robot_controller:="effort_controller" use_sim:=true
 ```
 
 # Running the controllers 
