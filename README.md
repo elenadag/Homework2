@@ -4,7 +4,7 @@ The goal of this homework is to dynamically control a 7-DoF robot manipulator us
 # Setup  
 Open the terminal, launch the container, and navigate to the directory where you want to download the folder. Then, clone the repository with:
 ```
-git clone https://github.com/choppyS/RL24---Homework2.git
+git clone https://github.com/elenadag/Homework2.git
 ```
 
 To build the packages, navigate to the ROS2 workspace and build them with:
