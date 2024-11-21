@@ -29,20 +29,13 @@ ros2 launch iiwa_bringup iiwa.launch.py
 
 If you want to apply a velocity controller, you need to launch the file with the velocity interface. To do this, run the following command:
 ```
-ros2 launch  iiwa_bringup iiwa.launch.py  command_interface:="velocity" robot_controller:="velocity_controller"
+ros2 launch iiwa_bringup iiwa.launch.py  command_interface:="velocity" robot_controller:="velocity_controller"
 ```
 
 If you want to apply an effort controller, you need to launch the file with the effort interface. To do this, run the following command:
 ```
-ros2 launch  iiwa_bringup iiwa.launch.py command_interface:="effort" robot_controller:=“effort_controller" 
+ros2 launch iiwa_bringup iiwa.launch.py command_interface:="effort" robot_controller:=“effort_controller" use_sim:=true
 ```
-
-By default, the launch file runs RViz and ROS2 simulations to visualize the robot's kinematics. To spawn the robot in the Gazebo environment and visualize the dynamics of the model, modify the launch command by adding:
-```
-use_sim:=true
-```
-
-This ensures that the value of the Gazebo simulation is set to true.
 
 # Running the controllers 
 To run the node with the controller, open another terminal, connect to the same Docker container, and execute the following command.
